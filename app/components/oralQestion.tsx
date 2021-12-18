@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },
   oralContentStyle: {
     backgroundColor: '#03203C',
-    height: hp('65%'),
+    height: hp('45%'),
     width: wp('100%'),
   },
 });

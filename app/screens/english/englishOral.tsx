@@ -27,11 +27,12 @@ export default class EnglishOral extends React.Component {
             ENGLISH FOR YOU
           </Text>
         </View>
+        <View style ={{marginTop:hp("1%")}}>
         <FlatList
+        scrollEnabled={true}
           data={EnglishOralDataQuestion}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({item}) => {
-            console.log('DATA : ', item);
             return (
               <View style={commonStyle.flexDirectionCol}>
                 <OralQuestion oralQuestionText={item.question} />
@@ -39,6 +40,7 @@ export default class EnglishOral extends React.Component {
             );
           }}
         />
+        </View>
       </CommonParentForAll>
     );
   }
