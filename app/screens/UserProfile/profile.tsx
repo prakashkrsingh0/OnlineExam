@@ -7,7 +7,8 @@ import {
   Linking,
   Platform,
   TouchableOpacity,
-  SafeAreaView
+  SafeAreaView,
+  StatusBar
 } from 'react-native';
 import {
   heightPercentageToDP as hp,
@@ -65,6 +66,9 @@ class Profile extends React.Component<any, state> {
   render() {
     return (
       <SafeAreaView style={styles.mainContainer}>
+        <StatusBar 
+        barStyle={"dark-content"}
+        />
         {/* BACK ARROW  */}
         <TouchableOpacity
           onPress={() => {
@@ -112,24 +116,7 @@ class Profile extends React.Component<any, state> {
             marginTop: hp('5%'),
             paddingTop: hp('1%'),
           }}>
-          <TouchableOpacity
-            // onPress={() => this.props.navigation.openDrawer()}
-            style={{
-              width: wp('5%'),
-              borderRadius: hp('5%'),
-              alignSelf: 'flex-end',
-              marginRight: wp('5%'),
-            }}>
-          <Image
-            source={require('../../resources/edit.png')}
-            style={{
-              width: wp('10%'),
-              height: hp('5%'),
-              alignSelf: 'center',
-              borderRadius: wp('5%'),
-            }}
-          />
-          </TouchableOpacity>
+          
           <View style={styles.userDetails}>
             <Text style={styles.userDetailsText}> I'm </Text>
             <TouchableOpacity>
@@ -170,6 +157,24 @@ class Profile extends React.Component<any, state> {
               </Text>
             </TouchableOpacity>
           </View>
+          {/* verify */}
+        <TouchableOpacity
+          onPress={() => 
+            this.props.navigation.navigate("EnglishMCQ") 
+        }
+          style={{
+            backgroundColor: '#F1DFFF',
+            width: wp('25%'),
+            borderRadius: hp('5%'),
+            alignSelf: 'center',
+            height: hp('4.5%'),
+            justifyContent:"center",
+            marginTop:hp("2%"),
+          }}>
+            <Text style={{
+              textAlign:"center"
+            }}> Verify</Text>
+        </TouchableOpacity>
         </View>
         {/* DEVELOPER CONTACT */}
         <TouchableOpacity
@@ -209,7 +214,7 @@ const styles = StyleSheet.create({
   userDetails: {
     flexDirection: 'row',
     alignSelf: 'center',
-    paddingVertical: hp('1.5%'),
+    paddingVertical: hp('1%'),
   },
   userDetailsText: {color: '#FFFFFF'},
 });

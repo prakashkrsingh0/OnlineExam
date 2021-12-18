@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useReducer} from 'react';
-import {View, Image, TouchableOpacity} from 'react-native';
+import React from 'react';
+import {View, Image, TouchableOpacity, StatusBar} from 'react-native';
 import {Drawer, Avatar, Title, Caption} from 'react-native-paper';
 import {DrawerContentScrollView, DrawerItem} from '@react-navigation/drawer';
 import {
@@ -8,7 +8,7 @@ import {
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
 import {Colors} from '../style/colors';
-import {connect, useSelector} from 'react-redux';
+import {connect} from 'react-redux';
 class DrawableContent extends React.Component<any, any> {
   // props: any;
   constructor(props) {
@@ -21,6 +21,7 @@ class DrawableContent extends React.Component<any, any> {
           flex: 1,
           backgroundColor: Colors.CodGray,
         }}>
+        <StatusBar barStyle={'light-content'} />
         <View
           style={{
             flex: 1,

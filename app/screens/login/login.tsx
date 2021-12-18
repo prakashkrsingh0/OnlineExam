@@ -66,65 +66,52 @@ export default class Login extends React.Component<any, state> {
           }}>
           <View style={styles.userDetails}>
             <Text style={styles.userDetailsText}> Enter Your Name </Text>
-            <View style={styles.userDetailsTextInput}>
-              <TextInput style={styles.userDetailsText} />
-            </View>
+              <TextInput style={styles.userDetailsTextInput} />
           </View>
 
           <View style={styles.userDetails}>
             <Text style={styles.userDetailsText}>
               In which class you are studing
             </Text>
-            <View style={styles.userDetailsTextInput}>
-              <TextInput style={styles.userDetailsText} />
-            </View>
+              <TextInput style={styles.userDetailsTextInput} />
           </View>
           <View style={styles.userDetails}>
             <Text style={styles.userDetailsText}>
               In which school you are studing{' '}
             </Text>
-            <View style={styles.userDetailsTextInput}>
-              <TextInput style={styles.userDetailsText} />
-            </View>
+              <TextInput style={styles.userDetailsTextInput} />
           </View>
           <View style={styles.userDetails}>
             <Text style={styles.userDetailsText}>
               Enter your parent's conatct number
             </Text>
-            <View style={styles.userDetailsTextInput}>
-              <TextInput style={styles.userDetailsText} />
-            </View>
+              <TextInput style={styles.userDetailsTextInput} />
           </View>
           <View style={styles.userDetails}>
             <Text style={styles.userDetailsText}>
               Enter your school's conatct number
             </Text>
-            <View style={styles.userDetailsTextInput}>
-              <TextInput style={styles.userDetailsText} />
-            </View>
+              <TextInput style={styles.userDetailsTextInput} />
           </View>
         </View>
 
-        {/* Submit Button  */}
+        {/* verify */}
         <TouchableOpacity
-          onPress={() => {
-            console.log('submit and navigate it properly :');
-          }}
+          onPress={() => 
+            this.props.navigation.navigate("Profile") 
+        }
           style={{
-            backgroundColor: '#FFFFFF',
+            backgroundColor: '#F1DFFF',
             width: wp('25%'),
             borderRadius: hp('5%'),
             alignSelf: 'center',
             height: hp('4.5%'),
             justifyContent:"center",
-            marginTop:hp("10%")
+            marginTop:hp("10%"),
           }}>
             <Text style={{
-              width: wp('25%'),
-              height: hp('2%'),
-              alignSelf: 'center',
-            }}> Submit</Text>
-
+              textAlign:"center"
+            }}> Verify</Text>
         </TouchableOpacity>
 
 
@@ -174,5 +161,9 @@ const styles = StyleSheet.create({
     height: hp('5%'),
     borderRadius: wp('5%'),
     paddingVertical: hp('1%'),
+    alignContent:"center",
+    paddingHorizontal:wp("3%"),
+    color:"#FFFFFF"
+
   },
 });
