@@ -12,6 +12,7 @@ import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
+import I18n from "../../localization/i18n"
 
 type state = {
   ProfilePicture: any;
@@ -68,10 +69,12 @@ export default class Login extends React.Component<any, state> {
             <Text style={styles.userDetailsText}> Enter Your Name </Text>
               <TextInput style={styles.userDetailsTextInput} />
           </View>
-
+{
+  console.log("hi transalottr data : ",I18n.t("In welcher Klasse Sie studieren"))
+}
           <View style={styles.userDetails}>
-            <Text style={styles.userDetailsText}>
-              In which class you are studing
+            <Text style={styles.userDetailsText}>{I18n.t("In welcher Klasse Sie studieren")}
+              {/* In which class you are studing */}
             </Text>
               <TextInput style={styles.userDetailsTextInput} />
           </View>
