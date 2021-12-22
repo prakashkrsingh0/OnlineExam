@@ -69,30 +69,27 @@ export default class Login extends React.Component<any, state> {
             <Text style={styles.userDetailsText}> Enter Your Name </Text>
               <TextInput style={styles.userDetailsTextInput} />
           </View>
-{
-  console.log("hi transalottr data : ",I18n.t("In welcher Klasse Sie studieren"))
-}
           <View style={styles.userDetails}>
-            <Text style={styles.userDetailsText}>{I18n.t("In welcher Klasse Sie studieren")}
+            <Text style={styles.userDetailsText}>{I18n.t("Login_InWhichClass")}
               {/* In which class you are studing */}
             </Text>
               <TextInput style={styles.userDetailsTextInput} />
           </View>
           <View style={styles.userDetails}>
             <Text style={styles.userDetailsText}>
-              In which school you are studing{' '}
+              {I18n.t("Login_ InWhichSchoolYouAreStuding")}
             </Text>
               <TextInput style={styles.userDetailsTextInput} />
           </View>
           <View style={styles.userDetails}>
             <Text style={styles.userDetailsText}>
-              Enter your parent's conatct number
+              {I18n.t("Login_EnterYourParent'sConatctNumber")}
             </Text>
               <TextInput style={styles.userDetailsTextInput} />
           </View>
           <View style={styles.userDetails}>
             <Text style={styles.userDetailsText}>
-              Enter your school's conatct number
+              {I18n.t("Login_EnterYourSchool'sConatctNumber")}
             </Text>
               <TextInput style={styles.userDetailsTextInput} />
           </View>
@@ -114,7 +111,7 @@ export default class Login extends React.Component<any, state> {
           }}>
             <Text style={{
               textAlign:"center"
-            }}> Verify</Text>
+            }}> {I18n.t("Login_Verify")}</Text>
         </TouchableOpacity>
 
 
@@ -125,7 +122,7 @@ export default class Login extends React.Component<any, state> {
             Linking.openURL('https://tekticle.wordpress.com/about-me/');
           }}>
           <Text style={styles.developerContactText}>
-            Click on.To Contact To @developer_Team.
+            {I18n.t("User_ClickHereToContactWithOurDeveloperTeam")}
           </Text>
         </TouchableOpacity>
       </View>

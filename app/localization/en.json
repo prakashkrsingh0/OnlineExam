@@ -1,10 +1,14 @@
 {
     "app-name": "OnlineExam",
-    "I'm": "I'am",
-    "In which class you are studing":"In welcher Klasse Sie studieren",
-    "I'm studying in class": "I'm studying in class",
-    "I'm going to": "I'm going to",
-    "Please contact to my Parent on": "Please contact to my Parent on",
-    "Click here, To Contact with our @developer_Team.": "Click here, To Contact with our @developer_Team."
+    "User_I'm": "I'am",
+    "Login_InWhichClass":"In which class you are studing",
+    "User_I'm_StudyingIn": "I'm studying in class",
+    "User_I'mGoing": "I'm going to",
+    "User_PleaseContactToMyParentOn": "Please contact to my Parent on",
+    "User_ClickHereToContactWithOurDeveloperTeam": "Click here, To Contact with our @developer_Team.",
+  "Login_ InWhichSchoolYouAreStuding":"In which school you are studing",
+  "Login_EnterYourParent'sConatctNumber":"Enter your parent's conatct number",
+  "Login_EnterYourSchool'sConatctNumber":"Enter your school's conatct number",
+  "Login_Verify":"Verify"
   }
   

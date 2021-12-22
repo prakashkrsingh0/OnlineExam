@@ -12,7 +12,7 @@ target 'OnlineExam' do
     :hermes_enabled => false
   )
 
-
+  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
 
   target 'OnlineExamTests' do
     inherit! :complete
