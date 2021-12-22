@@ -16,6 +16,7 @@ import {
 } from 'react-native-responsive-screen';
 import ImagePicker from 'react-native-image-crop-picker';
 import {connect} from 'react-redux';
+import I18n from '../../localization/i18n';
 
 type state = {
   ProfilePicture: any;
@@ -118,27 +119,27 @@ class Profile extends React.Component<any, state> {
           }}>
           
           <View style={styles.userDetails}>
-            <Text style={styles.userDetailsText}> I'm </Text>
+            <Text style={styles.userDetailsText}> {I18n.t("User_I'm")} </Text>
             <TouchableOpacity>
               <Text style={styles.userDetailsText}> {this.props.user.userName}</Text>
             </TouchableOpacity>
           </View>
 
           <View style={styles.userDetails}>
-            <Text style={styles.userDetailsText}> I'm studying in class</Text>
+            <Text style={styles.userDetailsText}> {I18n.t("User_I'm_StudyingIn")}</Text>
             <TouchableOpacity>
               <Text style={styles.userDetailsText}> {this.props.user.class}</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.userDetails}>
-            <Text style={styles.userDetailsText}>I'm going to </Text>
+            <Text style={styles.userDetailsText}>{I18n.t("User_I'mGoing")} </Text>
             <TouchableOpacity>
               <Text style={styles.userDetailsText}>{this.props.user.schoolName}</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.userDetails}>
             <Text style={styles.userDetailsText}>
-              Please contact to my Parent on
+              {I18n.t("User_PleaseContactToMyParentOn")}
             </Text>
             <TouchableOpacity>
               <Text style={styles.userDetailsText}>
@@ -183,7 +184,7 @@ class Profile extends React.Component<any, state> {
             Linking.openURL('https://tekticle.wordpress.com/about-me/');
           }}>
           <Text style={styles.developerContactText}>
-            Click here, To Contact with our @developer_Team.
+           {I18n.t("User_ClickHereToContactWithOurDeveloperTeam")}
           </Text>
         </TouchableOpacity>
       </SafeAreaView>
