@@ -12,7 +12,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		211B51B9E1BB475DB7CA23EB /* edit.svg in Resources */ = {isa = PBXBuildFile; fileRef = 2CE8E21A190847F4873ECFE4 /* edit.svg */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D174349349294E9D9352FF45 /* arrowLeft.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6C945A9CC7764C5D8C76F310 /* arrowLeft.svg */; };
 		E2E8036FE5830E4F2A8FAD5F /* libPods-OnlineExam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E56C287038C9FDCB680D7C /* libPods-OnlineExam.a */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +40,9 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = OnlineExam/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OnlineExam/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = OnlineExam/main.m; sourceTree = "<group>"; };
+		2CE8E21A190847F4873ECFE4 /* edit.svg */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = edit.svg; path = ../app/resources/svg/edit.svg; sourceTree = "<group>"; };
 		68B090C3E5605E95813B5276 /* Pods-OnlineExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineExam.release.xcconfig"; path = "Target Support Files/Pods-OnlineExam/Pods-OnlineExam.release.xcconfig"; sourceTree = "<group>"; };
+		6C945A9CC7764C5D8C76F310 /* arrowLeft.svg */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = arrowLeft.svg; path = ../app/resources/svg/arrowLeft.svg; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = OnlineExam/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA894B22F42FB0674EA751EB /* Pods-OnlineExam-OnlineExamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineExam-OnlineExamTests.release.xcconfig"; path = "Target Support Files/Pods-OnlineExam-OnlineExamTests/Pods-OnlineExam-OnlineExamTests.release.xcconfig"; sourceTree = "<group>"; };
 		BEA00F98C249B117203DDD93 /* Pods-OnlineExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineExam.debug.xcconfig"; path = "Target Support Files/Pods-OnlineExam/Pods-OnlineExam.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,9 +113,10 @@
 		554FBA5C1E9C42C794FA6DE9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C945A9CC7764C5D8C76F310 /* arrowLeft.svg */,
+				2CE8E21A190847F4873ECFE4 /* edit.svg */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -154,7 +159,6 @@
 				E6818872A6A289125D5D1E77 /* Pods-OnlineExam-OnlineExamTests.debug.xcconfig */,
 				AA894B22F42FB0674EA751EB /* Pods-OnlineExam-OnlineExamTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -254,6 +258,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D174349349294E9D9352FF45 /* arrowLeft.svg in Resources */,
+				211B51B9E1BB475DB7CA23EB /* edit.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
