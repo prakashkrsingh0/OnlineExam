@@ -94,6 +94,17 @@ class DrawableContent extends React.Component<any, any> {
                   label="MathMCQ"
                   onPress={() => this.props.navigation.navigate('MathMCQ')}
                 />
+                <DrawerItem
+                  icon={() => (
+                    <Image
+                      source={require('../resources/math.jpeg')}
+                      style={{height: hp('2.5%'), width: wp('5%')}}
+                    />
+                  )}
+                  labelStyle={{color: Colors.White}}
+                  label="GetUserDetails"
+                  onPress={() => this.props.navigation.navigate('GetUserDetails')}
+                />
               </Drawer.Section>
             </View>
           </View>

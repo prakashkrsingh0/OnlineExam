@@ -10,6 +10,7 @@ import Profile from './app/screens/UserProfile/profile';
 import Login from './app/screens/login/login';
 import {NavigationContainer} from '@react-navigation/native';
 import {StatusBar} from "react-native"
+import GetUserDetails from "./app/screens/getUserDetails/getUserDetails"
 
 const QuestionStack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -27,6 +28,7 @@ const AppQuestionStack = () => {
       <QuestionStack.Screen name="MathMCQ" component={MathMCQ} />
       <QuestionStack.Screen name="Profile" component={Profile} />
       <QuestionStack.Screen name="Login" component={Login} />
+      <QuestionStack.Screen name="GetUserDetails" component={GetUserDetails} />
     </QuestionStack.Navigator>
   );
 };
